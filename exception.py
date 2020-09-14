@@ -1,7 +1,11 @@
 import sys
+try:
+    x=int(input("x:"))
+    y=int(input("y:"))
 
-x=int(input("x:"))
-y=int(input("y:"))
+except ValueError:
+    print("Error!Didnt enter a number")
+    sys.exit(1)
 
 try:
     result=x/y
